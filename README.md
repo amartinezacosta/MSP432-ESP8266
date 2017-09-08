@@ -1,6 +1,6 @@
 ![logo](http://png-5.vector.me/files/images/7/5/75754/utep_miners_thumb.png)
 
-#**UTEP Electrical Engineering**
+# **UTEP Electrical Engineering**
 
 ### **MSP432 ESP8266**
 ***
