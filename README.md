@@ -1,5 +1,5 @@
 # **MSP432 ESP8266**
-***
+
 This is an interface to the popular [ESP8266](https://www.sparkfun.com/products/13678) wifi module. These little modules are incredibly handy if you are going to pull small pieces of information from a HTTP server. It supports both TCP and UDP connections, and it can setup up to 4 server connections. These little modules can be bought [here](http://www.ebay.com/itm/1x-ESP8266-Serial-WIFI-Wireless-Transceiver-Module-Send-Receive-LWIP-AP-STA-A-/201919942897?epid=622032097&hash=item2f035dd0f1:g:f78AAOSwT~9WhVbc) or [here](https://www.amazon.com/TBD-Controls-ESP8266-Microcontroller-Arduino/dp/B01MT6T73L/ref=sr_1_4?ie=UTF8&qid=1504839136&sr=8-4&keywords=ESP8266) or just google ESP8266 and find a cheap one :smile:
 ***
 
