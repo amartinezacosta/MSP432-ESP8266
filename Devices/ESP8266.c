@@ -212,6 +212,26 @@ bool ESP8266_SendData(char ID, char *Data, uint32_t DataSize)
     return true;
 }
 
+void ESP8266_Terminal(void)
+{
+    while(1)
+    {
+        MSPgets(EUSCI_A0_BASE, ESP8266_Buffer, 128);
+        MSPrintf(EUSCI_A2_BASE, ESP8266_Buffer);
+
+        __delay_cycles(48000000);
+        if(!ESP8266_WaitForAnswer(ESP8266_RECEIVE_TRIES))
+        {
+            MSPrintf(EUSCI_A0_BASE, "ESP8266 receive timeout error\r\n");
+        }
+        else
+        {
+            MSPrintf(EUSCI_A0_BASE, ESP8266_Buffer);
+        }
+
+    }
+}
+
 char *ESP8266_GetBuffer(void)
 {
     return ESP8266_Buffer;

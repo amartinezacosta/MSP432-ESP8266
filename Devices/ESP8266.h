@@ -20,7 +20,7 @@ bool ESP8266_EnableMultipleConnections(bool Enable);
 bool ESP8266_SendData(char ID, char *Data, uint32_t DataSize);
 
 void ESP8266_SendATCommand(char *ATcommand);
-//void ESP8266_ReadAvailable(char *Buffer);
+void ESP8266_Terminal(void);
 char *ESP8266_GetBuffer(void);
 void ESP8266_HardReset(void);
 
